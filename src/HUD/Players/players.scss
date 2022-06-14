@@ -7,12 +7,24 @@
     transition: opacity 0.75s;
     &.CT {
         .player .hp_bar {
-            background-color: var(--color-new-ct);
+            background-color: red;
+        }
+        .player_stats--top {
+            background-image: linear-gradient(to right, var(--color-new-ct-dark), var(--color-new-ct));
+        }
+        .player_stats--bottom {
+            background-color: var(--sub-panel-color);
         }
     }
     &.T {
         .player .hp_bar {
-            background-color: var(--color-new-t);
+            background-color: red;
+        }
+        .player_stats--top {
+            background-image: linear-gradient(to right, var(--color-new-t), var(--color-new-t-dark));
+        }
+        .player_stats--bottom {
+            background-color: var(--sub-panel-color);
         }
     }
     &.hide {
@@ -43,6 +55,9 @@
             }
             .dead-stats {
                 right: 8px;
+            }
+            &.dead {
+                width: 280px;
             }
         }
     }
@@ -86,6 +101,10 @@
                 .avatar {
                     justify-content: flex-start;
                 }
+            }
+            &.dead {
+                width: 280px;
+                align-self: end;
             }
         }
     }  
@@ -170,7 +189,6 @@
             }
         }
         .player_data {
-            background-color: var(--sub-panel-color);
             width: 415px;
             display: flex;
             flex-direction: row;

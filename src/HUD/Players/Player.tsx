@@ -36,7 +36,7 @@ export default class PlayerBox extends React.Component<IProps> {
             </div>
           </div>
           <div className="player_stats">
-            <div className="row">
+            <div className="row player_stats--top">
               <div className="health">
                 {player.state.health}
               </div>
@@ -47,7 +47,7 @@ export default class PlayerBox extends React.Component<IProps> {
               </div>
             </div>
             <div className={`hp_bar ${player.state.health <= 20 ? 'low':''}`} style={{ width: `${player.state.health}%` }}></div>
-            <div className="row">
+            <div className="row player_stats--bottom">
               <div className="armor_and_utility">
                 <Bomb player={player} />
                 <Armor player={player} />
