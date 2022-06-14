@@ -1,7 +1,7 @@
 {
-    "name":"Lexogrine HUD",
-    "version":"2.4.0",
-    "author":"Lexogrine",
+    "name":"alpenScene HUD",
+    "version":"0.1.0",
+    "author":"alpenScene",
     "legacy": false,
     "radar": true,
     "killfeed": true,
